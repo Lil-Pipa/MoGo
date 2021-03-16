@@ -1,1 +1,312 @@
+<!--
 
+    Доделать SVG спрайт Services
+    переделать цвета в таблице на человеческие
+    кнопка в шапке, что с ней?
+    убрать прозрачность супер пупер тип в темной теме
+
+
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="zxx" class="dark-theme">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
+    <title>Mogo</title>
+</head>
+<body>    
+    <header class="header">
+        <!-- Верхняя часть. Лого, навигация -->
+        <div class="header__inner"> 
+            <div class="header__logo"><a href="index.html">MoGo</a></div>
+
+            <nav class="nav">
+                <a class="active" href="#about">About</a>
+                <a href="#service">Service</a>
+                <a href="#">Work</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact</a>
+                <a href="#"><img src="assets/img/icon/shop.svg" alt="Shop"></a>
+                <a href="#"><img src="assets/img/icon/serach.svg" alt="Serach"></a>
+            </nav>
+        </div>
+        <!-- /Верхняя часть. Лого, навигация -->
+
+        <!-- Центральная часть -->
+        <div class="intro">
+            <h2 class="intro__suptitle">Creative Template</h2>
+            <h1 class="intro__title">Welcome to MoGo</h1>
+
+            <a class="button" href="#">Learn more</a>               
+        </div>    
+        <!-- /Центральная часть -->
+
+        <!-- бутафорский слайдер -->
+        <div class="slider">       
+            <div class="slider__inner">
+                <div class="slider__item active">
+                    <b>01</b>
+                    Intro
+                </div>
+                <div class="slider__item">
+                    <b>02</b>
+                    Work</div>
+                <div class="slider__item">
+                    <b>03</b>
+                    About</div>
+                <div class="slider__item">
+                    <b>04</b>
+                    Contacts</div>
+            </div>
+        </div>  
+        <!-- /Слайдер -->      
+    </header> 
+
+    <section class="about">
+        <header class="section__header">
+            <h3 class="section__suptitle" id="about">What we do</h3>
+            <h2 class="section__title">Story about us</h2>
+            <div class="section__text">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna 
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                </p>
+            </div>
+        </header>
+        
+        <div class="about__inner">
+            <div class="about__item">                    
+                <div class="about__img">
+                    <img src="assets/img/about/1.jpg" alt="">
+                </div>
+                <div class="about__text">
+                    <img src="assets/img/icon/users.svg" alt="">
+                    super team
+                </div>
+            </div>
+
+            <div class="about__item">                    
+                <div class="about__img">
+                    <img src="assets/img/about/2.jpg" alt="">
+                </div>
+                <div class="about__text">                        
+                    <img src="assets/img/icon/users.svg" alt="">
+                    puper Team
+                </div>
+            </div>
+
+            <div class="about__item">                                        
+                <div class="about__img">
+                    <img src="assets/img/about/3.jpg" alt=""> 
+                </div>
+                <div class="about__text">
+                    <img src="assets/img/icon/users.svg" alt="">
+                    duper team
+                </div>
+            </div>    
+        </div>
+
+            <div class="statistic">
+                <div class="stat">
+                    <div class="stat__item">
+                        <div class="stat__num">42</div>
+                        web design projects
+                    </div>
+                    <div class="stat__item">
+                        <div class="stat__num">123</div>
+                        happy client
+                    </div>
+                    <div class="stat__item">
+                        <div class="stat__num">15</div>
+                        award winner
+                    </div>
+                    <div class="stat__item">
+                        <div class="stat__num">99</div>
+                        cup of coffee
+                    </div>
+                    <div class="stat__item">
+                        <div class="stat__num">24</div>
+                        members
+                    </div>
+                </div>                
+            </div>
+    </section>
+
+    <section class="service">
+        <header class="section__header">
+            <h3 class="section__suptitle">We work with</h3>
+            <h2 class="section__title">Amazing services</h2>
+        </header>
+
+        <div class="service__row">
+            <div class="service__item">
+                    <svg class="service__icon">
+                        <use xlink:href="assets/img/icon/services.svg#photo"></use>
+                    </svg>
+                
+
+                <div class="service__text">
+                    <div class="service__title">
+                        Photography
+                    </div>
+                    Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit, 
+                    sed do eiusmod tempor.
+                </div>
+            </div>
+            
+            <div class="service__item">                
+                <svg class="service__icon">
+                    <use xlink:href="assets/img/icon/services.svg#web-design"></use>
+                </svg>
+                <div class="service__text">
+                    <div class="service__title">web design</div>                
+                    Ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor. 
+                </div>               
+            </div>
+            
+            <div class="service__item">
+                
+                <svg class="service__icon">
+                    <use xlink:href="assets/img/icon/services.svg#creativity"></use>
+                </svg>
+                <div class="service__text">
+                    <div class="service__title">creativity</div>
+                    Dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor.    
+                </div>            
+            </div>            
+        </div>
+
+        <hr>
+
+        <div class="service__row">
+            <div class="service__item">
+                <div class="service__icon">
+                    <svg>
+                        <use xlink:href="assets/img/icon/services.svg#seo"></use>
+                    </svg> 
+                </div>                
+                <div class="service__text">                    
+                    <div class="service__title">seo</div>
+                    Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+                </div>
+            </div>
+
+            <div class="service__item">                                
+                <svg class="service__icon">
+                    <use xlink:href="assets/img/icon/services.svg#css-html"></use>
+                </svg>
+                <div class="service__text">                    
+                    <div class="service__title">css/html</div>
+                Lorem dolor sit amet, consectetur adipiscing elit, sed do tempor.
+                </div>
+            </div>
+            <div class="service__item">                                
+                <svg class="service__icon">
+                    <use xlink:href="assets/img/icon/services.svg#digital"></use>
+                </svg>
+                <div class="service__text">                    
+                    <div class="service__title">digital</div>
+                Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="design" id="design">
+        <header class="section__header">
+            <h3 class="section__suptitle">For all devices</h3>
+            <h2 class="section__title">Unique design</h2>
+        </header>
+
+        <div class="design__bg_img">
+            <img src="assets/img/design/display.png" alt="">
+        </div>
+        <div class="design__front_img">
+            <img src="assets/img/design/White.png" alt="">
+        </div>        
+    </section>
+
+
+    <section class="details" >
+        <header class="section__header">
+            <h3 class="section__suptitle" id="service">Service</h3>
+            <h2 class="section__title">what we do</h2>
+            <div class="section__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
+        </header>
+
+        <div class="details__inner">
+            <div class="details__img">
+                <img src="assets/img/details.jpg" alt="">
+            </div>
+            <div class="details__tab">
+                <details class="details__item">
+                    <summary class="details__title">
+                        <picture class="details__icon">
+                            <img src="assets/img/icon/photo-2.svg" alt="">
+                        </picture>
+                        Photography
+                        <canvas class="details__arrow"></canvas>
+                    </summary>                    
+                    <div class="details__des">
+                        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.                             
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>              
+                    </div>                    
+                </details>
+
+                <details class="details__item">
+                    <summary class="details__title">
+                        <picture class="details__icon">
+                            <img src="assets/img/icon/creativity-2.svg" alt="">
+                        </picture>
+                        Creativity
+                        <canvas class="details__arrow"></canvas>
+                    </summary>
+                    <div class="details__des">
+                        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.                             
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>           
+                    </div>                    
+                </details>
+
+                <details class="details__item">
+                    <summary class="details__title">
+                        <picture class="details__icon">
+                            <img src="assets/img/icon/web-design-2.svg" alt="">
+                        </picture>
+                        Web Design
+                        <canvas class="details__arrow"></canvas>
+                    </summary>
+                    <div class="details__des">  
+                        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.                             
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>       
+                    </div>                    
+                </details>
+
+
+            </div>
+
+        </div>
+
+        <br><br><br>Sorry... Work in progress<br><br><br>
+    </section>
+
+
+
+
+</body>
+</html>
