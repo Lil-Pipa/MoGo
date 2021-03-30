@@ -886,8 +886,9 @@ hr{
 }
 
 .gallery__img{
-    width: 25vw;;
     display: block;
+    max-width: 100%;
+    height: auto;
     transition: opacity 0.2s linear;
 }
 
