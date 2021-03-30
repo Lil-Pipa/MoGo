@@ -1,24 +1,12 @@
-<!--
-
-    Доделать SVG спрайт Services
-    переделать цвета в таблице на человеческие
-    кнопка в шапке, что с ней?
-    убрать прозрачность супер пупер тип в темной теме
-
-
-
--->
-
-
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
     <meta charset="UTF-8">
+    <title>MoGo</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
-    <title>Mogo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
 </head>
+
 <body class="page light-theme">  
     <header class="header">        
         <!-- Верхняя часть. Лого, навигация -->
@@ -28,7 +16,7 @@
             <nav class="nav">
                 <a class="active" href="#about">About</a>
                 <a href="#service">Service</a>
-                <a href="#">Work</a>
+                <a href="#work">Work</a>
                 <a href="#">Blog</a>
                 <a href="#">Contact</a>
                 <a href="#"><svg width="17.62" height="14.031"><use xlink:href="assets/img/icon/nav.svg#shop"></use></svg></a>
@@ -69,9 +57,12 @@
         <!-- /Слайдер -->      
     </header> 
 
-    <section class="about">
+    
+
+    <!-- .about -->
+    <section class="section" id="about">
         <header class="section__header">
-            <h3 class="section__suptitle" id="about">What we do</h3>
+            <h3 class="section__suptitle">What we do</h3>
             <h2 class="section__title">Story about us</h2>
             <div class="section__text">
                 <p>
@@ -114,35 +105,45 @@
                     duper team
                 </div>
             </div>    
-        </div>
-
-            <div class="statistic">
-                <div class="stat">
-                    <div class="stat__item">
-                        <div class="stat__num">42</div>
-                        web design projects
-                    </div>
-                    <div class="stat__item">
-                        <div class="stat__num">123</div>
-                        happy client
-                    </div>
-                    <div class="stat__item">
-                        <div class="stat__num">15</div>
-                        award winner
-                    </div>
-                    <div class="stat__item">
-                        <div class="stat__num">99</div>
-                        cup of coffee
-                    </div>
-                    <div class="stat__item">
-                        <div class="stat__num">24</div>
-                        members
-                    </div>
-                </div>                
-            </div>
+        </div>        
     </section>
+    <!-- /.about -->
 
-    <section class="service">
+
+
+    <!-- .statistics -->
+    <div class="statistics">
+        <div class="section">
+            <div class="stat">
+                <div class="stat__item">
+                    <div class="stat__num">42</div>
+                    web design projects
+                </div>
+                <div class="stat__item">
+                    <div class="stat__num">123</div>
+                    happy client
+                </div>
+                <div class="stat__item">
+                    <div class="stat__num">15</div>
+                    award winner
+                </div>
+                <div class="stat__item">
+                    <div class="stat__num">99</div>
+                    cup of coffee
+                </div>
+                <div class="stat__item">
+                    <div class="stat__num">24</div>
+                    members
+                </div>
+            </div>
+        </div>                
+    </div
+    ><!-- /.statistics -->
+
+
+    
+    <!-- .services -->
+    <section class="section">
         <header class="section__header">
             <h3 class="section__suptitle">We work with</h3>
             <h2 class="section__title">Amazing services</h2>
@@ -228,59 +229,65 @@
             </div>
         </div>
     </section>
+    <!-- /.services -->
 
-    <section class="design" id="design">
-        <header class="section__header">
-            <h3 class="section__suptitle">For all devices</h3>
-            <h2 class="section__title">Unique design</h2>
-        </header>
+    
+    
+    <section class="section--devices"><!-- .devices -->
+        <div class="section">
+            <header class="section__header">
+                <h3 class="section__suptitle">For all devices</h3>
+                <h2 class="section__title">Unique design</h2>
+            </header>
 
-        <div class="design__bg_img">
-            <img src="assets/img/design/tablet.webp" alt="">
+            <div class="devices">
+                <img class="devices__item" src="assets/img/design/tablet.webp" alt="">
+                <img class="devices__item   devices__item--phone" src="assets/img/design/phone.webp" alt="">
+            </div>
         </div>
-        <div class="design__front_img">
-            <img src="assets/img/design/phone.webp" alt="">
-        </div>        
-    </section>
+    </section><!-- /.devices -->
+    
 
 
-    <section class="details" >
+    <section class="section" id="service"><!-- .what we do -->
         <header class="section__header">
-            <h3 class="section__suptitle" id="service">Service</h3>
+            <h3 class="section__suptitle">Service</h3>
             <h2 class="section__title">what we do</h2>
             <div class="section__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
         </header>
 
-        <div class="details__inner">
-            <div class="details__img">
+        <div class="wedo__inner">
+            <div class="wedo__item">
                 <img src="assets/img/details.webp" alt="">
             </div>
-            <div class="details__tab">
-                <details class="details__item">
-                    <summary class="details__title">                                
+
+            <div class="wedo__item">
+                <details class="details__item" open>
+                    <summary class="details__header">                                
                         <svg class="details__icon" width="30" height="30">
                             <use xlink:href="assets/img/icon/details.svg#photo"></use>
                         </svg>
                         Photography
                         <canvas class="details__arrow"></canvas>
                     </summary>                    
-                    <div class="details__des">
+                    <div class="details__content">
                         <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.                             
                             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>              
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </div>              
                     </div>                    
                 </details>
 
                 <details class="details__item">
-                    <summary class="details__title">                                
+                    <summary class="details__header">                                
                         <svg class="details__icon" width="28" height="32">
                             <use xlink:href="assets/img/icon/details.svg#creativity"></use>
                         </svg>
                         Creativity
                         <canvas class="details__arrow"></canvas>
                     </summary>
-                    <div class="details__des">
+                    <div class="details__content">
                         <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.                             
                             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
@@ -289,33 +296,302 @@
                 </details>
 
                 <details class="details__item">
-                    <summary class="details__title">                                
+                    <summary class="details__header">                                
                         <svg class="details__icon" width="32" height="32">
                             <use xlink:href="assets/img/icon/details.svg#web-design"></use>
                         </svg>
                         Web Design
                         <canvas class="details__arrow"></canvas>
                     </summary>
-                    <div class="details__des">  
+                    <div class="details__content">  
                         <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.                             
                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
                         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>       
                     </div>                    
                 </details>
+            </div>
+        </div>    
+    </section><!-- /.what we do --> 
 
 
+    
+    <div class="section--gray"><!-- .quote -->
+        <div class="section">
+            <div class="quote__item">
+                <canvas class="quote__arrow left"></canvas>
+                <canvas class="quote__arrow right"></canvas>
+                
+                <div class="quote__icon">
+                    <svg width="63" height="61">
+                        <use xlink:href="assets/img/icon/quote.svg#quote"></use>
+                    </svg>
+                </div>
+                <blockquote class="quote__text">
+                    <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</p>
+                    <cite class="quote__cite">Jon Doe</cite>
+                </blockquote>
+            </div>
+        </div>
+    </div><!-- /.quote -->
+
+
+    
+    <section class="section"><!-- .team -->
+        <header class="section__header">
+            <h3 class="section__suptitle">Who we are</h3>
+            <h2 class="section__title">Meet our team</h2>
+            <div class="section__text">
+                <p>                    
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                </p>
+            </div>
+        </header>
+
+        <div class="team__inner">
+            <div class="team__item--background"> 
+                <div class="team__item">  
+                    <div class="team__img">
+                        <img src="assets/img/team/3.webp" alt="">
+                    </div>
+                    <div class="team__url">
+                        <div class="team__icon">
+                            <a href="#"><svg width="12.031" height="25.62"><use xlink:href="assets/img/icon/team.svg#facebook"></use></svg></a>
+                        </div>
+                        <div class="team__icon">
+                            <a href="#"><svg width="25.594" height="25.62"><use xlink:href="assets/img/icon/team.svg#instagram"></use></svg></a>
+                        </div>
+                        <div class="team__icon">
+                            <a href="#"><svg width="19.594" height="25.62"><use xlink:href="assets/img/icon/team.svg#pinterest"></use></svg></a>
+                        </div>
+                        <div class="team__icon">
+                            <a href="#"><svg width="25.594" height="20.79"><use xlink:href="assets/img/icon/team.svg#twitter"></use></svg></a>
+                        </div>                       
+                    </div>                    
+                </div> 
+                
+                <div class="team__text">
+                    <div class="team__name">Matthew Dix</div>
+                    <div class="team__post">Graphic Design</div>
+                </div>
+            </div>  
+            
+            <div class="team__item--background"> 
+                <div class="team__item">  
+                    <div class="team__img">
+                        <img src="assets/img/team/2.webp" alt="">
+                    </div>
+                    <div class="team__url">
+                        <div class="team__icon">
+                            <a href="#"><svg width="12.031" height="25.62"><use xlink:href="assets/img/icon/team.svg#facebook"></use></svg></a>
+                        </div>
+                        <div class="team__icon">
+                            <a href="#"><svg width="25.594" height="25.62"><use xlink:href="assets/img/icon/team.svg#instagram"></use></svg></a>
+                        </div>
+                        <div class="team__icon">
+                            <a href="#"><svg width="19.594" height="25.62"><use xlink:href="assets/img/icon/team.svg#pinterest"></use></svg></a>
+                        </div>
+                        <div class="team__icon">
+                            <a href="#"><svg width="25.594" height="20.79"><use xlink:href="assets/img/icon/team.svg#twitter"></use></svg></a>
+                        </div>                       
+                    </div>
+                </div> 
+                <div class="team__text">
+                    <div class="team__name">Christopher Campbell</div>
+                    <div class="team__post">Branding/UX design</div>
+                </div>
+            </div>  
+
+            <div class="team__item--background"> 
+                <div class="team__item">  
+                    <div class="team__img">
+                        <img src="assets/img/team/1.webp" alt="">
+                    </div>
+                    <div class="team__url">
+                        <div class="team__icon">
+                            <a href="#"><svg width="12.031" height="25.62"><use xlink:href="assets/img/icon/team.svg#facebook"></use></svg></a>
+                        </div>
+                        <div class="team__icon">
+                            <a href="#"><svg width="25.594" height="25.62"><use xlink:href="assets/img/icon/team.svg#instagram"></use></svg></a>
+                        </div>
+                        <div class="team__icon">
+                            <a href="#"><svg width="19.594" height="25.62"><use xlink:href="assets/img/icon/team.svg#pinterest"></use></svg></a>
+                        </div>
+                        <div class="team__icon">
+                            <a href="#"><svg width="25.594" height="20.79"><use xlink:href="assets/img/icon/team.svg#twitter"></use></svg></a>
+                        </div>                       
+                    </div>
+                </div> 
+                <div class="team__text">
+                    <div class="team__name">Michael Fertig</div>
+                    <div class="team__post">Developer</div>
+                </div>
+            </div>  
+            
+        </div>       
+
+    </section><!-- /.team -->
+    
+
+
+    <div class="section--gray"><!-- .logos -->
+        <div class="section">
+            <div class="logos">
+                <div>
+                    <img src="assets/img/logos/1.webp" alt="">
+                </div>
+                <div>
+                    <img src="assets/img/logos/2.webp" alt="">
+                </div>
+                <div>
+                    <img src="assets/img/logos/3.webp" alt="">
+                </div>
+                <div>
+                    <img src="assets/img/logos/4.webp" alt="">
+                </div>
+                <div>
+                    <img src="assets/img/logos/5.webp" alt="">
+                </div>
+                <div>
+                    <img src="assets/img/logos/6.webp" alt="">
+                </div>
+            </div>  
+        </div>
+    </div><!-- /.logos -->
+
+
+
+
+    <section class="section works" id="work"><!-- .works -->
+        <header class="section__header">
+            <h3 class="section__suptitle">What we do</h3>
+            <h2 class="section__title">some of our work</h2>
+            <div class="section__text">
+                <p>                    
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                </p>
+            </div>
+        </header>
+                    
+        <div class="gallery">
+            <div class="gallery__column">
+                <div class="gallery__item">
+                    <img class="gallery__img" src="assets/img/works/1-1.webp" alt="">
+                    <div class="gallery__about">
+                        
+                        <svg class="gallery__icon" width="30" height="30">
+                            <use xlink:href="assets/img/icon/details.svg#photo"></use>
+                        </svg>
+                        
+                        <div class="gallery__title">creatively designed</div>
+                        <div class="gallery__suptitle">Lorem ipsum dolor sit</div>
+                    </div>
+                </div>
+
+                <div class="gallery__item">
+                    <img class="gallery__img" src="assets/img/works/2-1.webp" alt="">
+                    <div class="gallery__about">
+                        
+                        <svg class="gallery__icon" width="30" height="30">
+                            <use xlink:href="assets/img/icon/details.svg#photo"></use>
+                        </svg>
+                        
+                        <div class="gallery__title">creatively designed</div>
+                        <div class="gallery__suptitle">Lorem ipsum dolor sit</div>
+                    </div>
+                </div> 
             </div>
 
+            <div class="gallery__column">
+                <div class="gallery__item">
+                    <img class="gallery__img" src="assets/img/works/1-2.webp" alt="">
+                    <div class="gallery__about">
+                        
+                        <svg class="gallery__icon" width="30" height="30">
+                            <use xlink:href="assets/img/icon/details.svg#photo"></use>
+                        </svg>
+                        
+                        <div class="gallery__title">creatively designed</div>
+                        <div class="gallery__suptitle">Lorem ipsum dolor sit</div>
+                    </div>
+                </div>
+
+                <div class="gallery__item">
+                    <img class="gallery__img" src="assets/img/works/2-2.webp" alt="">
+                    <div class="gallery__about">
+                        
+                        <svg class="gallery__icon" width="30" height="30">
+                            <use xlink:href="assets/img/icon/details.svg#photo"></use>
+                        </svg>
+                        
+                        <div class="gallery__title">creatively designed</div>
+                        <div class="gallery__suptitle">Lorem ipsum dolor sit</div>
+                    </div>
+                </div> 
+            </div>
+            
+            <div class="gallery__column">
+                <div class="gallery__item">
+                    <img class="gallery__img" src="assets/img/works/1.webp" alt="">
+                    <div class="gallery__about">
+                        
+                        <svg class="gallery__icon" width="30" height="30">
+                            <use xlink:href="assets/img/icon/details.svg#photo"></use>
+                        </svg>
+                        
+                        <div class="gallery__title">creatively designed</div>
+                        <div class="gallery__suptitle">Lorem ipsum dolor sit</div>
+                    </div>
+                </div>
+            </div>
+                
+            <div class="gallery__column">
+                <div class="gallery__item">
+                    <img class="gallery__img" src="assets/img/works/1-3.webp" alt="">
+                    <div class="gallery__about">
+                        
+                        <svg class="gallery__icon" width="30" height="30">
+                            <use xlink:href="assets/img/icon/details.svg#photo"></use>
+                        </svg>
+                        
+                        <div class="gallery__title">creatively designed</div>
+                        <div class="gallery__suptitle">Lorem ipsum dolor sit</div>
+                    </div>
+                </div>
+
+                <div class="gallery__item">
+                    <img class="gallery__img" src="assets/img/works/2-3.webp" alt="">
+                    <div class="gallery__about">
+                        
+                        <svg class="gallery__icon" width="30" height="30">
+                            <use xlink:href="assets/img/icon/details.svg#photo"></use>
+                        </svg>
+                        
+                        <div class="gallery__title">creatively designed</div>
+                        <div class="gallery__suptitle">Lorem ipsum dolor sit</div>
+                    </div>
+                </div> 
+            </div>
+        </div>       
+    </section><!-- /.works -->
+
+
+    
+    <div class="section"><!-- .review -->
+        <div class="review__item">
+            <canvas class="review__arrow left"></canvas>
+            <canvas class="review__arrow right"></canvas>
+            
+            <div class="review__photo first"></div>
+            <blockquote class="review__text">
+                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</p>
+                <cite class="review__cite">Joshua Earle</cite>
+            </blockquote>
         </div>
-
-        <br><br><br>Sorry... Work in progress<br><br><br>
-    </section>
-
+    </div><!-- /.review -->
 
     <footer>
         <script src="assets/js/script.js"></script>
-
     </footer>
 
 </body>
