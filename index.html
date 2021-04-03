@@ -2,6 +2,7 @@
 <html lang="zxx">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MoGo</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
@@ -19,7 +20,7 @@
                 <a href="#service">Service</a>
                 <a href="#work">Work</a>
                 <a href="#blog">Blog</a>
-                <a href="#">Contact</a>
+                <a href="#contact">Contact</a>
                 <a href="#"><svg width="17.62" height="14.031"><use xlink:href="assets/img/icon/nav.svg#shop"></use></svg></a>
                 <a href="#"><svg width="17.62" height="17.625"><use xlink:href="assets/img/icon/nav.svg#search"></use></svg></a>
                 <a href="#" title="Change theme" class="theme-button"><svg width="17.62" height="17.62"><use xlink:href="assets/img/icon/nav.svg#light"></use></svg></a>
@@ -42,17 +43,20 @@
             <div class="slider__inner">
                 <div class="slider__item active">
                     <b>01</b>
-                    Intro
+                    <span class="slider__text">Intro</span>
                 </div>
                 <div class="slider__item">
                     <b>02</b>
-                    Work</div>
+                    <span class="slider__text">Work</span>
+                </div>
                 <div class="slider__item">
                     <b>03</b>
-                    About</div>
+                    <span class="slider__text">About</span>
+                </div>
                 <div class="slider__item">
                     <b>04</b>
-                    Contacts</div>
+                    <span class="slider__text">Contacts</span>
+                </div>
             </div>
         </div>  
         <!-- /Слайдер -->      
@@ -142,9 +146,9 @@
             <h2 class="section__title">Amazing services</h2>
         </header>
 
-        <div class="service__row">
+        <div class="service">
 
-            <div class="service__item">
+            <div class="service__item desctop">
                 <svg class="service__icon">
                     <use xlink:href="assets/img/icon/services.svg#photo"></use>
                 </svg>
@@ -159,7 +163,7 @@
                 </div>
             </div>
             
-            <div class="service__item">                
+            <div class="service__item desctop">                
                 <svg class="service__icon">
                     <use xlink:href="assets/img/icon/services.svg#web-design"></use>
                 </svg>
@@ -171,7 +175,7 @@
                 </div>               
             </div>
             
-            <div class="service__item">                
+            <div class="service__item desctop">                
                 <svg class="service__icon">
                     <use xlink:href="assets/img/icon/services.svg#creativity"></use>
                 </svg>
@@ -181,13 +185,10 @@
                     Dolor sit amet, consectetur adipiscing elit, 
                     sed do eiusmod tempor.    
                 </div>            
-            </div>            
-        </div>
+            </div> 
+            
 
-        <hr>
-
-        <div class="service__row">
-
+            
             <div class="service__item">
                 <svg class="service__icon">
                     <use xlink:href="assets/img/icon/services.svg#seo"></use>
@@ -221,6 +222,7 @@
                 </div>
             </div>
         </div>
+
     </section><!-- /.services -->
     
     
@@ -233,7 +235,7 @@
 
             <div class="devices">
                 <img class="devices__item" src="assets/img/design/tablet.webp" alt="">
-                <img class="devices__item   devices__item--phone" src="assets/img/design/phone.webp" alt="">
+                <img class="devices__item--phone" src="assets/img/design/phone.webp" alt="">
             </div>
         </div>
     </section><!-- /.devices -->    
@@ -575,14 +577,14 @@
     </div><!-- /.review -->
 
     
-    <section class="section--clients"><!-- .devices -->
+    <section class="section--clients"><!-- .clients -->
         <div class="section">
             <header class="section__header">
                 <h3 class="section__suptitle">Happy Clients</h3>
                 <h2 class="section__title">What people say</h2>
             </header>
 
-            <div class="client__row">
+            <div class="clients">
                 <div class="client__item">
                     <div class="client__photo">
                         <img src="assets/img/people/1.webp" alt="">
@@ -609,10 +611,7 @@
                         </blockquote>
                     </div>
                 </div><!-- /.client__item -->
-            </div><!-- /.client__row -->
 
-
-            <div class="client__row">
                 <div class="client__item">
                     <div class="client__photo">
                         <img src="assets/img/people/3.webp" alt="">
@@ -639,10 +638,10 @@
                         </blockquote>
                     </div>
                 </div><!-- /.client__item -->
-            </div><!-- /.client__row -->
+            </div><!-- /.clients -->
 
         </div><!-- /.section -->
-    </section><!-- /.devices -->    
+    </section><!-- /.clients -->    
 
 
     <section class="section" id="blog"><!-- .blog -->
@@ -734,7 +733,7 @@
     </div><!-- /.map -->
 
 
-    <footer class="section--footer"><!-- footer -->
+    <footer class="section--footer" id="contact"><!-- footer -->
         <div class="section">
         <div class="footer__inner">
 
@@ -844,21 +843,7 @@
                     <a class="instagram__link" href="#">View more photos</a>
                 </div>
             </section><!-- /right -->
-
-
-
-
-
-        </div>
-
-
-
-
-
-
-
-
-        <hr>
+        </div>        
         <div class="footer">
             © 2016 MoGo free PSD template by <a href="#">Laaqiq</a>
         </div>

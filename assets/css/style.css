@@ -74,8 +74,9 @@ a{
 }
 
 .section{    
-    width: 1200px;
+    width: 1230px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 .section--gray{
@@ -91,20 +92,6 @@ a{
 h1, h2, h3, h4, h5, h6{
     margin: 0;
 }
-
-hr{    
-    height: 1px;
-    width: 100%;
-    margin: 0 auto;
-
-    border: 0;
-    background-color: var(--color-text-light);
-    opacity: 0.4;
-}
-
-
-
-
 
 
 /* Титульный лист */
@@ -298,7 +285,7 @@ hr{
     top: -3px;
     left: 0;
     z-index: 1;
-    width: 70px;
+    width: 30%;
     background-color: var(--color-accent-line);
     height: 3px;
 
@@ -360,15 +347,19 @@ hr{
 /* позиционирование блоков */
 .about__inner{
     display: flex;
+    align-items: center;
     justify-content: space-between;
 
     /*отступ до следующего контейнера*/
-    margin-bottom: 100px;
+    margin: 0 -15px;
 }
 
 .about__item{ 
     position: relative;
     background-color: var(--color-accent);
+    width: 33.33333%;
+    max-width: 380px;
+    margin: 0 15px;
 }
 
 
@@ -385,13 +376,15 @@ hr{
     opacity: 1;
 }
 
-.about__img{
+.about__img{    
     transition: transform 0.2s linear;
     background: var(--color-bg-gradient) center no-repeat;
 }
 
 .about__img img {   
     display: block; 
+    width: 100%;
+    height: auto;
     transition: opacity 0.1s linear;
 }
 
@@ -423,13 +416,13 @@ hr{
 /* Statistics */ 
 
 .statistics{
+    margin-top: 100px;
     background-color: var(--color-accent-bg);
 }
 
 .stat{
     display: flex;   
     line-height: 1;
-    margin: 0 auto;
 }
 
 .stat__item{  
@@ -457,17 +450,24 @@ hr{
 
 /* Block Services */
 
-.service__row{
+.service{
     display: flex;
-    margin: 50px 0;
+    justify-content: center;
+    flex-wrap: wrap;
+
 }
 
 .service__item{
-    flex: 1 1 0;
-    padding-left: 90px;
     position: relative;
-    width: 100px;
+    width: 33.33333%;
     max-width: 380px;
+
+    padding: 0 0 40px 90px;
+    margin-bottom: 40px;
+}
+
+.service__item.desctop{
+    border-bottom: 1px var(--color-accent-light) solid;
 }
 
 .service__icon{
@@ -537,11 +537,19 @@ hr{
 
 .wedo__inner{
     display: flex;
-    margin-bottom: 120px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 -15px 120px;
 }
 
 .wedo__item{
+    padding: 0 15px;
     width: 50%;
+}
+
+.wedo__item img{
+    max-width: 100%;
+    height: auto;
 }
 
 .details__item{    
@@ -764,7 +772,6 @@ hr{
     display: flex;
     justify-content: space-between;
 
-    margin-bottom: 190px;
 }
 
 /* цветная подложка */
@@ -777,15 +784,11 @@ hr{
 /* плавно смещаем блок */ 
 .team__item:hover{
     transform: translate3d(-10px, -10px, 0);
-    transition: transform 0.2s linear;
 }
 
-/* плавно возвращаем */
-.team__item{    
-    position: relative;
+.team__item{   
     transition: transform 0.2s linear;    
     background: var(--color-bg-gradient) center no-repeat;    
-    
 }
 
 /* плавность прозрачности картинки */
@@ -887,6 +890,7 @@ hr{
     justify-content: space-between;
     align-items: center;
 
+    margin-top: 150px;
     padding: 70px 0;
 }
 
@@ -1081,13 +1085,15 @@ hr{
     padding: 0.1px;
 }
 
-.client__row{
+.clients{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .client__item{
     position: relative;
+    max-width: 400px;
     margin: 0 0 80px 180px;
 }
 
@@ -1172,7 +1178,6 @@ hr{
 .blog{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 120px;
 }
 
 .blog__header{
@@ -1319,6 +1324,7 @@ hr{
     align-items: center;
     height: 200px;
 
+    margin-top: 100px;
     background: var(--color-bg-des),
      url("../img/map.webp") center no-repeat;
     background-size: cover;     
@@ -1602,9 +1608,340 @@ hr{
     padding: 20px 0;
     text-align: center;
 
+    border-top: 1px var(--color-accent-light) solid;
     color:var(--color-text-bold);
 }
 
 .footer a:hover{
     text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* full */
+@media (max-width: 1230px){
+
+    /* header */
+    .intro__suptitle{
+        font-size: 4em;
+    }
+    
+    .intro__title{
+        font-size: 8em;
+    }
+
+
+    /* review */
+    .quote__text p{
+        font-size: 1.6em;
+    }
+}
+
+
+/* tablet landscape */
+@media (max-width: 990px){
+    .section{
+        width: 100%;
+    }
+
+    /* header */
+    .intro__suptitle{
+        font-size: 3em;
+    }
+    
+    .intro__title{
+        font-size: 6em;
+    }
+
+
+    /* stat */
+    .stat{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .stat__item{
+        flex: none;
+        width: 33.33333%;
+
+        padding-top: 30px;
+        padding-bottom: 30px;
+        border: none;
+    }
+    .stat__item:last-child{
+        border:none;
+    }
+
+    /* review */
+    .quote__icon{
+        width: 100px;
+        height: 100px;
+        margin-right: 5%;
+    }
+    .quote__icon svg{        
+        width: 40px;
+        height: 40px;
+        
+    }
+
+    /* blog */
+    .blog__img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+
+
+
+/* landscape */
+@media (max-width: 770px){
+    
+    /* header */
+    .nav{
+        display: none;
+    }
+
+    .slider__text{
+        display: none;
+    }
+
+    /* section */
+    .section__header{
+        margin-top: 50px;
+    }
+
+
+    /* about */
+    .about__inner{
+        flex-direction: column;
+    }
+    .about__item{
+        width: 100%;
+        margin-bottom: 1em;
+    }
+    .about__item:last-child{
+        margin-bottom: 0;
+    }
+
+    /* services */
+    .service__item{
+        width: 50%;
+    }
+    .service__item.desctop{
+        border: none;
+    }
+
+    /* device */
+    .devices__item{
+        width: 70%;
+        padding-left: 10%
+    }
+    .devices__item--phone{
+        width: 25%;
+        right: 15%;
+    }
+
+    /* wedo */
+    .wedo__item{
+        width: 80%;
+    }
+
+    /* team */
+    .team__inner{
+        flex-wrap: wrap;
+        justify-content: center;
+
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .team__item img{
+        
+        width: 100%;
+    }
+    
+    .team__item--background{
+        margin-bottom: 100px;
+    }
+
+    .team__url{
+        flex-wrap: wrap;
+        width: 70%;
+        left: 15%;
+        top: 40%;
+    }
+
+    /* logos */
+    .logos{
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
+    .logos div{
+        text-align: center;
+        width: 33.33333%;
+    }
+    
+    
+
+    /* works */
+    .gallery{
+        flex-wrap: wrap;
+    }
+    .gallery__column{
+        width: 50%;
+    }
+
+
+    /* review */
+    .quote__icon{
+        display: none;
+    }
+    .quote__text p, .quote__cite{
+        font-size: 1.2em;
+    }
+
+    .review__photo{
+        display: none;
+    }
+    .review__text p, .review__cite{
+        font-size: 1em;
+    }
+    
+    /* blog */
+    .blog{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blog__item{
+        width: 80%;
+        margin-bottom: 10%;
+    }
+    .blog__item:last-child{
+        margin: 0;
+    }
+
+    
+    /* footer */
+    .footer__inner{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__col{
+        margin-bottom: 10%;
+    }
+    .footer__col.left{width: 100%;}    
+    .footer__col.center{width: 100%;}
+    .footer__col.right{width: 100%;}
+
+    .footer{
+        margin-top: 50px;
+    }
+}
+
+
+/* mobile */
+@media (max-width: 560px){
+
+    /* header */
+    .intro__suptitle{
+        font-size: 2.2em;
+    }
+    
+    .intro__title{
+        font-size: 3.4em;
+    }
+
+
+    /* section */
+    .section__suptitle{
+        font-size: 1.3em;
+    }
+    .section__title{
+        font-size: 1.6em;
+    }
+    .section__title::after{
+        margin: 20px auto;
+    }
+
+    
+
+    /* stat */
+    .stat{
+        line-height: 0.5;
+    }
+    .stat__item{
+        width: 100%;
+        border-bottom: rgba(255, 255, 255, 0.3) 1px solid;    
+    }
+
+    .stat__item:last-child{
+        border-bottom: none;
+    }
+
+    .stat__num{
+        font-size: 40px;
+    }
+
+
+    /* services */
+    .service__item{
+        padding: 0 0 20px 50px;
+        margin: 0;
+        width: 100%;
+        
+    }
+    .service__icon{
+        left: 0;
+    }
+
+
+
+    /* wedo */
+    .wedo__item img{
+        display: none;
+    }
+
+
+
+
+
+    /* clients */
+    
+    .client__item{        
+        margin: 0 0 60px 100px;
+    }
+    .client__photo{
+        top: 0;
+        left: -100px;
+
+        width: 70px;
+        height: 70px;
+    }
+    .client__photo img{
+        width:70px;
+        height:70px;
+    }
+
+    /* logos */
+    .logos{
+        padding: 30px 0;
+        justify-content: center;
+    }
+    .logos div{
+        width: 50%;
+    }
+
 }
